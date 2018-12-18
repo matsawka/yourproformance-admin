@@ -1,0 +1,30 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: $red;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+}
+button {
+    cursor: pointer;
+}
+button:disabled {
+    cursor: default;
+}
+.displayNone {
+    display:none;
+}
+.displayBlock {
+    display:block;
+}
+label {
+    color: $midnight;
+}
+a, a:hover {
+    color: darken($midnight, 20%);
+    text-decoration: underline;
+}
+.smalltext {
+    font-size: 75%;
+}

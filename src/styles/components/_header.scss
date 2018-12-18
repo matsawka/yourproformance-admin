@@ -1,0 +1,41 @@
+.header {
+    background: $silver;
+    margin-bottom: $m-size;
+}
+.header__container {
+    padding: $m-size $m-size 0 $m-size;
+    background-color:transparent;
+    margin: 0 auto;
+}
+//BEM - block element modifier - convention
+//title is in header child __
+.header__title {
+    font-size: $l-size;
+    margin:0;
+}
+.header__title a {
+    color: white;
+    text-decoration: none;
+}
+.subheader {
+    max-width:60rem;
+    margin: 0 auto $m-size auto;
+    padding: 0;
+    text-align: center;
+    color:white;
+    font-size: $lm-size;
+}
+.header__social {
+    text-align: right;
+} 
+@media (min-width: $desktop-breakpoint) {
+    .header {
+        margin-bottom: $xl-size;
+    }
+}
+@media (max-width: $desktop-breakpoint) {
+    .header__social {
+        display:none;
+    }
+}
+

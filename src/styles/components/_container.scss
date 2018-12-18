@@ -1,0 +1,37 @@
+.container {
+    max-width:75rem;
+    margin: 0 auto $l-size auto;
+    padding: 0 $m-size;
+    background-color:white;
+    @include border-radius(5px);
+    padding: $l-size;
+}
+.row {
+    margin-bottom: $m-size;
+}
+.bottom-row {
+    margin-bottom: 0;
+    margin-top: $l-size;
+}
+.add-option__input {
+    border: .1rem solid ligthen($off-white, 10%);
+    color: $midnight;
+    padding: $s-size;
+    width: 100%;
+}
+select {
+    width:100%;
+}
+.required {
+    color: $required;
+}
+#enter_loan_amount_validation, #intended_use_validation, #source_collateral_validation {
+    display: block;
+    min-height: 24px;
+}
+button:focus {
+    outline: 0;
+}
+form {
+    margin-bottom: $m-size;
+}
