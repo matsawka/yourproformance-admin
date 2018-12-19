@@ -6,7 +6,7 @@ export default class Auth {
   //local project
   auth0 = new auth0.WebAuth({
     clientID: process.env.clientID,
-    redirectUri: process.env.APIKEY.redirectUri,
+    redirectUri: process.env.redirectUri,
     responseType: 'token id_token',
     scope: 'openid'
   });
