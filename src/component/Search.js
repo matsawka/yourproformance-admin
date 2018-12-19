@@ -27,18 +27,16 @@ export default class Search extends React.Component {
                         div.innerHTML += `<div class="col-12 col-sm-4"><b>${key}</b> </div>`;
                         
                         if(typeof(val) !== 'object') {
-                            div.innerHTML += `<div class="col-12 col-sm-6">${val}</div>
+                            div.innerHTML += `<div class="col-12 col-sm-6">${val}</div>`;
                             <div class="col-12 col-sm-2"><button className="button editbutton">Edit</button></div>
-                            `;
                         }
                         else { 
                             //object in object extraction
                             div.innerHTML += `<div class="col-12 col-sm-6"></div>`;
                              Object.entries(val).forEach(([key, val]) => {
                                 div.innerHTML += `<div class="col-12 col-sm-4">&nbsp;&nbsp;&nbsp;<b>${key}</b> </div>`;
-                                div.innerHTML += `<div class="col-12 col-sm-6">${val} </div>
-                                <div class="col-12 col-sm-2"><button className="button editbutton">Edit</button></div>
-                                `;
+                                div.innerHTML += `<div class="col-12 col-sm-6">${val} </div>`;
+                                //<div class="col-12 col-sm-2"><button className="button editbutton">Edit</button></div>
                             });
                             
 
