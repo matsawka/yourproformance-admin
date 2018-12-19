@@ -3,7 +3,9 @@ import * as firebase from 'firebase';
 // Initialize Firebase
 
     firebase.initializeApp({
-         //initialize here
+            apiKey: process.env.APIKEY,
+            authDomain: process.env.AUTHDOMAIN,
+            projectId: 'yourproformance'
           });
 
           // Initialize Cloud Firestore through Firebase
@@ -15,5 +17,3 @@ import * as firebase from 'firebase';
           });
 
   export default firebase;
-
-
